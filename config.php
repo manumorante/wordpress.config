@@ -3,7 +3,7 @@
 Plugin Name: MM Config
 Plugin URI: http://www.estadologico.com
 Description: WordPress Plugin. MM Config sets vars for different uses.
-Author: Manuel Morante
+Author: Manu Morante
 Version: 2.0
 Author URI: http://www.estadologico.com
 */
@@ -12,7 +12,6 @@ function config_admin_menu() {
 	add_submenu_page('plugins.php', 'MM Config', 'MM Config', 1, __FILE__, 'config_pagina_opciones');
 }
 add_action('admin_menu', 'config_admin_menu');
-
 
 // Begin Options
 function config_pagina_opciones() {
